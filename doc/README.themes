@@ -1,0 +1,48 @@
+
+INSTRUCTIONS TO CREATE A NEW THEME
+
+To create a new hoteldruid theme make a copy of the "sim" 
+directory inside the "themes" directory of hoteldruid and 
+rename it with a new name of 3 letters. Then edit the theme 
+names in the "name.php" file inside the "php" subdirectory of 
+the new theme. Now you will be able to select the new theme 
+from "configure and customize".
+
+In the "php" subdirectory you have the files that are actually 
+used by hoteldruid. You can modify the head and foot of all 
+hoteldruid pages from "head.php" and "foot.php" files. In 
+file "menu.php" you can set the variable $hide_default_menu to 
+true and insert there a new main menu page. Lastly the dates 
+lists are generated from the file "selectperiod.php".
+
+The other subdirectories are optional and you can delete or 
+modify them as needed by your theme.
+
+
+USE CSS INSTEAD OF NEW THEME
+
+If your changes can be carried out through css only then you 
+can use an external css file without creating a new theme. 
+This, besidedes being simplier, has also some other advantages 
+like being more compatible with future versions of hoteldruid 
+and the possibility to use the css file also when using 
+hoteldruid on digitaldruid.net hosting.
+
+Just enable custom constants by editing the file 
+includes/funzioni.php and uncomment (by removing the 
+initial #) this line:
+
+#@include("./includes/costanti.php");
+
+then edit the file includes/costanti.php and insert the path 
+to your custom css file (can be also an URL) between the empty 
+quotation marks in this line:
+
+define('C_FILE_CSS_PERS',"");
+
+Now, if this file exists, it will be loaded after all other 
+css files, so it can overwrite all other css properties. You 
+can also set another css file for mobile browsers, just insert 
+its path in this other line:
+
+define('C_FILE_MOB_CSS_PERS',"");
