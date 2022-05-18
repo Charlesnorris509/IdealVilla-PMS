@@ -1,0 +1,92 @@
+<?php
+
+switch ($messaggio) {
+
+case "Backup":                                  $messaggio = "Backup"; break;
+case "File creato":                             $messaggio = "Fichier cree"; break;
+case "Non ho il permesso di scrittura sul file":        $messaggio = "Vous n'avez pas la permission d'ecrire dans ce fichier"; break;
+case "Si è verificato un errore cancellando il file":   $messaggio = "Une erreur c'est produite lors de la suppression du fichier"; break;
+case "File cancellato":                         $messaggio = "Fichier efface"; break;
+case "<b style=\"color: red;\">ATTENZIONE</b>: premendo su <b>\"<i>Continua</i>\"</b>, prima di ripristinare i dati dal <i>file</i>, tutti i dati del <i>database attuale</i> verranno <b>cancellati</b>":  $messaggio = "<b style=\"color: red;\">Attention</b>: si vous cliquez sur <b>\"<i>Continuer</i>\"</b>, avant de restaurer les donnees provenant du <i>document</i>, toutes les donnee inserrer dans la <i>base de donnee actuelle</i> seront<b>suprrime</b>"; break;
+case "Inserisci i nuovi dati per la connessione al database":   $messaggio = "Inserrer de nouvelles donnees pour se connecter a la base de donnee"; break;
+case "Tipo di database":                        $messaggio = "Type de base dedonnee"; break;
+case "Nome del database da utilizzare":         $messaggio = "Le nom de la base de donnee a utilise"; break;
+case "Database già esistente":                  $messaggio = "Base de donnee existante"; break;
+case "Si":                                      $messaggio = "Oui"; break;
+case "No":                                      $messaggio = "Non"; break;
+case "Se già esistente e non vuoto usare un prefisso non presente nel database per il nome delle tabelle":      $messaggio = "S'il existe déjà et n'est pas vide, utilisez un préfixe inconnue dans la base de données pour les noms de tables"; break;
+case "Nome del computer a cui collegarsi":      $messaggio = "les noms de l'ordinateur a se connnecter sur le system"; break;
+case "Numero della porta a cui collegarsi":     $messaggio = "Le numero de port a se connecter sur"; break;
+case "Normalmete 5432 o 5433 per Postgresql o 3306 per Mysql":  $messaggio = "Normallement 5432 ou 5433 pour Postgresql ou 3306 pour Mysql"; break;
+case "Nome per l'autenticazione al database":   $messaggio = "Nom de l'utilisateur pour s'authentifier a la base donne"; break;
+case "Parola segreta per l'autenticazione al database": $messaggio = "Mot de passe necessaire pour s'authentication"; break;
+case "Caricare la libreria dinamica \"pgsql.so\" o \"mysql.so\"":       $messaggio = "Recharger les libraries dynamique \"pgsql.so\" or \"mysql.so\""; break;
+case "scegliere si se non viene caricata automaticamente da php":       $messaggio = "choosir oui si elles ne sont pas automatiquement charger par php"; break;
+case "Nome del database a cui collegarsi temporaneamente":      $messaggio = "Nom de la base donnee a etablir une connection temporaire"; break;
+case "solo per Postgresql con database non esistente":  $messaggio = "uniquement pour Postgresql avec une base de données inexistante"; break;
+case "Continua":                                $messaggio = "Continuer"; break;
+case "Vecchio database svuotato, per rimuoverlo del tutto procedere manualmente":       $messaggio = "L'ancienne base de donnee a ete vide,elle est prete a ete efface completement"; break;
+case "Database creato":                         $messaggio = "Base de donnee cree"; break;
+case "Non è stato possibile connettersi al nuovo database, controllare i dati per la connessione, i privilegi dell' utente o il nome del database": $messaggio = "Il n'a pas ete possible de se connecter a la base de donne, verifier les donnees de connection, le priviledge de l'utilisateur ou le nom de la base de donnee"; break;
+case "Non è stato possibile creare il nuovo database, controllare i dati per la connessione, i privilegi dell' utente, il nome del database o se esiste già un database chiamato":  $messaggio = "Il n'a pas ete possible de creer une nouvelle base de donnee,verifier les donnees de connection, les priviledges de l'utilisateurs, le nom de la base de donnee ou s'il existe deja une base de donnee avec le meme nom"; break;
+case "Non ho i permessi di scrittura sulla cartella dati":      $messaggio = "Vous n'avez pas la permission de modifier le fichier Dati"; break;
+case "La versione attuale di hoteldruid e quella del file non coincidono":      $messaggio = "La version actuelle de IdealVillaPMS et celle du fichier ne sont pas les mêmes"; break;
+case "La versione attuale e quella del file non coincidono":    $messaggio = "La version actuel et celle du ficheir version ne sont pas les memes"; break;
+case "Non ho potuto leggere il file":           $messaggio = "Vous n'etes pas capable de lire ce fichier"; break;
+case "Torna indietro":                          $messaggio = "Retourner"; break;
+case "Sistema di backup per HotelDruid":        $messaggio = "Backup systeme pour IdealVilla"; break;
+case "Crea il file di backup":                  $messaggio = "Creer un fichier backup"; break;
+case "Crea un nuovo file di backup":            $messaggio = "Creer un nouveau fichier backup"; break;
+case "sovrascrivendo l'attuale":                $messaggio = "remplacer le document aactuel"; break;
+case "Guarda il file":                          $messaggio = "Afficher le fichier"; break;
+case "per salvarlo (eventualmente usa il bottone indietro del browser per tornare qui)":        $messaggio = "pour sauvegarder (éventuellement utliser le bouton de retour du navigateur pour revenir ici)"; break;
+case "Cancella":                                $messaggio = "	Effacer"; break;
+case " l'attuale file di backup":               $messaggio = " fichier backup actuel"; break;
+case "Ripristina i dati dal file":              $messaggio = "Restaurer les donnees du fichier"; break;
+case " (i dati attuali verranno cancellati), utilizzando per la connessione al database:":      $messaggio = "(les données actuelles seront supprimées), en utilisant pour la création de la base :"; break;
+case "i dati dell'attuale connessione":         $messaggio = "donnee de la connection actuelle"; break;
+case "nuovi dati":                              $messaggio = "nouvelles donnees"; break;
+case "Ho fatto l'upload del file":              $messaggio = "Vous avez telecharge le fichier"; break;
+case "Non ho potuto fare l'upload del file":    $messaggio = "Vous n'avez pas ete capable de telecharger le fichier"; break;
+case "Fai l'upload":                            $messaggio = "Telecharger"; break;
+case " del file di backup":                     $messaggio = " ce fichier backup"; break;
+case " di un nuovo file di backup":             $messaggio = " ce nouveaux fichier backup"; break;
+case "Prefisso nel nome delle tabelle":         $messaggio = "Préfixe dans le nom des tableaux"; break;
+case "opzionale, utile per più installazioni di hoteldruid nello stesso database":      $messaggio = "en option, utile pour plus d'installations d'IdealVilla dans la même base de donnee"; break;
+case "Il prefisso del nome delle tabelle è sbagliato (accettate solo lettere minuscole, numeri e _ , primo carattere lettera)":     $messaggio = "le préfixe du nom des tables est erroné (uniquement les lettres minuscules acceptées, les chiffres et _ , première lettre de caractère) "; break;
+case "Il contenuto del file inviato non è corretto":    $messaggio = "Les donnees inscrites dans le document inserrer sont incorrectes"; break;
+case "Il formato del file è errato":            $messaggio = "Le format de ce fichier est incorrecte"; break;
+case "Compresso":                               $messaggio = "Compresses"; break;
+case "Backup dei documenti":                    $messaggio = "Documents de backup"; break;
+case "Crea il file di backup dei documenti":    $messaggio = "Créer un fichier de sauvegarde de documents"; break;
+case "Crea un nuovo file di backup dei documenti":      $messaggio = "Créer un nouveau fichier de sauvegarde de documents"; break;
+case " del file di backup dei documenti":       $messaggio = " Ce document de sauvegarde"; break;
+case " di un nuovo file di backup dei documenti":       $messaggio = " Ce nouveau document de sauvegarde"; break;
+case " l'attuale file di backup dei documenti": $messaggio = " fichier de sauvegarde des documents actuels"; break;
+case "aggiungi ai documenti attuali":           $messaggio = "ajouter aux documents actuels"; break;
+case "rimpiazza i documenti attuali":           $messaggio = "replacer les documents actuelles"; break;
+case "i documenti attuali verranno cancellati": $messaggio = "Le document actuel sera efface"; break;
+case "Ripristina i documenti dal file":         $messaggio = "Restaurer les documents du fichier"; break;
+case "Documenti ripristinati":                  $messaggio = "Documents restaures"; break;
+case "Backup completo":                         $messaggio = "Backup complet"; break;
+case "Includi i modelli internet":              $messaggio = "Inclure des modèles Internet"; break;
+case "creato il":                               $messaggio = "cree"; break;
+case "alle":                                    $messaggio = "le"; break;
+case "copia":                                   $messaggio = "copier"; break;
+case "il file di backup dai documenti predefiniti in":  $messaggio = "le fichier de sauvegarde des documents par défaut dans"; break;
+case "file copiato":                            $messaggio = "fichier copie"; break;
+case "si è verificato un errore copiando il file":      $messaggio = "Il y a eu une erreur lors de la copie du fichier"; break;
+case "Errori":                                  $messaggio = "Erreur"; break;
+case "Includi tutti gli anni":                  $messaggio = "Inclure toutes les annees"; break;
+case "Includi solo gli anni selezionati":       $messaggio = "Inclure seulement les annees choisies"; break;
+case "Prova a mantenere i dati degli anni non contenuti nel backup":    $messaggio = "Essayez de conserver les données des années non contenues dans la sauvegarde"; break;
+case "alcuni dati di questi anni potrebbero comunque venir persi":      $messaggio = "certaines données de ces années peuvent être perdues de toute façon"; break;
+case "tutti i documenti contenuti nel file":    $messaggio = "Tous les documents contenue dans ce fichier"; break;
+case "solo il documento":                       $messaggio = "seul document"; break;
+case "Raggiunto il limite giornaliero di backup":       $messaggio = "Vous avez atteint la limite de sauvegardes quotidiennes"; break;
+case "":                $messaggio = ""; break;
+case "":                $messaggio = ""; break;
+
+} # fine switch ($messagio)
+
+?>
